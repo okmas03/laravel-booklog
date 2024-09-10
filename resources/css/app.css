@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.quotes {
+    font-style: italic;
+    border-left-width: 2px;
+    --tw-border-opacity: 1;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity));
+    padding-left: 1rem;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.nav-link {
+    width: 120px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+    transition: all 0.2s ease;
+}
+
+.nav-link:active {
+    box-shadow: 0px 0px black;
+    transform: translate(4px, 4px);
+}
+
+.form {
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: beige;
+    --main-color: black;
+    padding: 20px;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.input-higher,
+select,
+textarea {
+    width: 500px;
+    max-width: 600px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    margin-right: 15px;
+}
+
+.input {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    margin-right: 15px;
+}
+
+
+
+.input::placeholder,
+.input-higher::placeholder,
+textarea::placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+}
+
+.input:focus,
+.input-higher:focus,
+textarea:focus {
+    border: 2px solid var(--input-focus);
+}
+
+.button-confirm,
+.button-add {
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+}
+
+.button-confirm {
+    width: 150px;
+    height: 45px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+    transition: all 0.2s ease;
+}
+
+.button-add {
+    width: 70px;
+    height: 54px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    margin-top: 20px;
+    align-self: center;
+    transition: all 0.2s ease;
+}
+
+.button-confirm:active,
+.button-add:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(4px, 4px);
+}
+
+.book {
+    position: relative;
+    border-radius: 10px;
+    width: 220px;
+    height: 300px;
+    background-color: whitesmoke;
+    box-shadow: 1px 1px 12px #000;
+    transform: preserve-3d;
+    perspective: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    transform-origin: 0;
+    box-shadow: 1px 1px 12px #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.book:hover .cover {
+    transition: all 0.5s;
+    transform: rotateY(-80deg);
+}
+
+.no-cover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #F2E8C6;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.author {
+    font-size: 14px;
+    color: #555;
+}
+
+.book-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.filter-form {
+    max-width: 300px;
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.button-filter {
+    width: 70px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #ADD8E6;
+    box-shadow: 4px 4px black;
+    font-size: 17px;
+    font-weight: 600;
+    color: #323232;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-filter:active {
+    box-shadow: 0px 0px black;
+    transform: translate(4px, 4px);
+}
+
+
+.header {
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: beige;
+    --main-color: black;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+
+.button-hero {
+    width: 150px;
+    height: 100px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #ADD8E6;
+    box-shadow: 4px 4px black;
+    font-size: 30px;
+    font-weight: 600;
+    color: #323232;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-hero:active {
+    box-shadow: 0px 0px black;
+    transform: translate(4px, 4px);
+}
+
+.button-edit {
+    width: 100px;
+    height: 70px;
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: #F5F5DC;
+    box-shadow: 4px 4px black;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #323232;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.button-edit:active {
+    box-shadow: 0px 0px black;
+    transform: translate(4px, 4px);
+}
