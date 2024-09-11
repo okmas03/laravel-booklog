@@ -36,19 +36,3 @@
 ![Book Details](assets/screenshots/book-details.png)
 
 ---
-
-## ⚙️ Installation
-
-### Requirements
-- PHP 8.x
-- Composer
-- Laravel 9.x
-- Node.js & npm
-- MySQL or any database supported by Laravel
-
-### Setup Instructions
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/okmas03/laravel-booklog.git
-   cd laravel-booklog
