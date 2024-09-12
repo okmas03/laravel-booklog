@@ -22,20 +22,6 @@
 - 📱 **Responsive Layout**: Optimized for mobile and desktop views.
 - 🚀 **Premium Access**: Early premium features for active users.
 
----
-
-## 📸 Screenshots
-<<<<<<< HEAD
-
-### Homepage
-![Homepage](assets/screenshots/homepage.png)
-
-### Dashboard
-![Dashboard](assets/screenshots/dashboard.png)
-
-### Book Details
-![Book Details](assets/screenshots/book-details.png)
-
 =======
 ## 📸 Screenshots
 
